@@ -8,5 +8,5 @@ export default {
     extend: {},
   },
   plugins: [],
-  base: "/[Book-Reading-App]/"
+  base: "/[Book_Reading-App]/"
 }
