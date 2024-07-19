@@ -27,7 +27,7 @@ const Header = () => {
                 <h2 className="text-base text-black font-roboto">
                   Jack Walter
                 </h2>
-                <i class="fa-solid fa-angle-down"></i>
+                <i className="fa-solid fa-angle-down"></i>
               </div>
             </div>
           </div>
