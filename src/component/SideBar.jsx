@@ -3,7 +3,7 @@ import React from "react";
 const SideBar = () => {
   return (
     <>
-      <div className="sidebar w-full pl-12 bg-black">
+      <div className="sidebar pl-4 bg-black">
         <div className="pt-12">
           <img src="https://placehold.co/200x100" alt="logo" />
         </div>
