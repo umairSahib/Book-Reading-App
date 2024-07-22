@@ -1,8 +1,9 @@
 import React from "react";
 
-const Adventure = () => {
+const Fantasy = () => {
   return (
     <div>
+      {" "}
       <div className="flex justify-between ml-12 mr-12 pt-12 items-center">
         <div>
           <h1 className="text-black font-roboto text-lg font-semibold">
@@ -131,4 +132,4 @@ const Adventure = () => {
   );
 };
 
-export default Adventure;
+export default Fantasy;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Adventure = () => {
+const All = () => {
   return (
     <div>
       <div className="flex justify-between ml-12 mr-12 pt-12 items-center">
@@ -131,4 +131,4 @@ const Adventure = () => {
   );
 };
 
-export default Adventure;
+export default All;
