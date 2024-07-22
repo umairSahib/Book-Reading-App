@@ -19,7 +19,7 @@ const Adventure = () => {
           </button>
         </div>
       </div>
-      <div className="flex ml-12 mr-12 mt-10 gap-14">
+      <div className="flex ml-12 mr-12 mt-10 gap-4">
         <div className="">
           <div className="flex-col  text-center">
             <img src="https://placehold.co/180x200" alt="card" />

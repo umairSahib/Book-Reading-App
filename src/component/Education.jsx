@@ -19,10 +19,10 @@ const Education = () => {
           </button>
         </div>
       </div>
-      <div className="flex ml-12 mr-12 mt-10 gap-14">
+      <div className="flex ml-12 mr-12 mt-10 gap-4">
         <div className="">
           <div className="flex-col  text-center">
-            <img src="https://placehold.co/180x200" alt="card" />
+            <img src="https://placehold.co/160x200" alt="card" />
             <h1 className="font-roboto text-lg font-bold whitespace-pre mt-2">
               The Vanishing Half
             </h1>
@@ -40,8 +40,10 @@ const Education = () => {
         </div>
         <div className="">
           <div className="flex-col  text-center">
-            <img src="https://placehold.co/180x200" alt="card" />
-            <h1 className="font-roboto text-lg font-bold mt-2 ">Very Nice</h1>
+            <img src="https://placehold.co/160x200" alt="card" />
+            <h1 className="font-roboto text-lg font-bold mt-2 whitespace-pre">
+              Very Nice
+            </h1>
             <h2 className="text-gray-400 font-roboto font-semibold text-sm mt-1">
               Mercy Dermancky
             </h2>
@@ -56,8 +58,8 @@ const Education = () => {
         </div>
         <div className="">
           <div className="flex-col  text-center">
-            <img src="https://placehold.co/180x200" alt="card" />
-            <h1 className="font-roboto text-lg font-bold mt-2">
+            <img src="https://placehold.co/160x200" alt="card" />
+            <h1 className="font-roboto text-lg font-bold mt-2 whitespace-pre">
               The Great Gatbsy
             </h1>
             <h2 className="text-gray-400 font-roboto font-semibold text-sm mt-1">
@@ -74,8 +76,8 @@ const Education = () => {
         </div>
         <div className="">
           <div className="flex-col  text-center">
-            <img src="https://placehold.co/180x200" alt="card" />
-            <h1 className="font-roboto text-lg font-bold mt-2">
+            <img src="https://placehold.co/160x200" alt="card" />
+            <h1 className="font-roboto text-lg font-bold mt-2 whitespace-pre">
               The Other's Gold
             </h1>
             <h2 className="text-gray-400 font-roboto font-semibold text-sm mt-1">
@@ -92,8 +94,8 @@ const Education = () => {
         </div>
         <div className="">
           <div className="flex-col  text-center">
-            <img src="https://placehold.co/180x200" alt="card" />
-            <h1 className="font-roboto text-lg font-bold mt-2">
+            <img src="https://placehold.co/160x200" alt="card" />
+            <h1 className="font-roboto text-lg font-bold mt-2 whitespace-pre">
               Of Mice And Men
             </h1>
             <h2 className="text-gray-400 font-roboto font-semibold text-sm mt-1">
@@ -110,8 +112,8 @@ const Education = () => {
         </div>
         <div className="">
           <div className="flex-col  text-center">
-            <img src="https://placehold.co/180x200" alt="card" />
-            <h1 className="font-roboto text-lg font-bold mt-2">
+            <img src="https://placehold.co/160x200" alt="card" />
+            <h1 className="font-roboto text-lg font-bold mt-2 whitespace-pre">
               The Vanishing Half
             </h1>
             <h2 className="text-gray-400 font-roboto font-semibold text-sm mt-1">
