@@ -1,13 +1,10 @@
 import React from "react";
-import SideBar from "./component/SideBar";
-import Header from "./component/Header";
-import Navbar from "./component/Navbar";
+import RadixComponent from "./component/RadixComponent";
 
 const Home = () => {
   return (
     <>
-      {/* <Header /> */}
-      <Navbar />
+      <RadixComponent />
     </>
   );
 };
