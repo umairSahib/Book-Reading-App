@@ -3,9 +3,9 @@ import React from "react";
 const SideBar = () => {
   return (
     <>
-      <div className="sidebar pl-4 bg-black">
+      <div className="sidebar max-w-full pl-4 bg-black">
         <div className="pt-12">
-          <img src="https://placehold.co/200x100" alt="logo" />
+          <img src="https://placehold.co/100x50" alt="logo" />
         </div>
         <div className="flex items-center gap-2 pt-8 ">
           <i className="fa fa-house text-gray-500"></i>
