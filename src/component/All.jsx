@@ -127,6 +127,114 @@ const All = () => {
           </div>
         </div>
       </div>
+      <div className="flex ml-12 mr-12 mt-10 gap-4">
+        <div className="">
+          <div className="flex-col  text-center">
+            <img src="https://placehold.co/180x200" alt="card" />
+            <h1 className="font-roboto text-lg font-bold whitespace-pre mt-2">
+              The Vanishing Half
+            </h1>
+            <h2 className="text-gray-400 font-roboto font-semibold mt-1 text-sm">
+              Brit Bennet
+            </h2>
+            <div className="flex gap-2 mt-2 justify-center">
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-gray-300"></i>
+            </div>
+          </div>
+        </div>
+        <div className="">
+          <div className="flex-col  text-center">
+            <img src="https://placehold.co/180x200" alt="card" />
+            <h1 className="font-roboto text-lg font-bold mt-2 ">Very Nice</h1>
+            <h2 className="text-gray-400 font-roboto font-semibold text-sm mt-1">
+              Mercy Dermancky
+            </h2>
+            <div className="flex gap-2 mt-2 justify-center">
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-amber-500"></i>
+            </div>
+          </div>
+        </div>
+        <div className="">
+          <div className="flex-col  text-center">
+            <img src="https://placehold.co/180x200" alt="card" />
+            <h1 className="font-roboto text-lg font-bold mt-2">
+              The Great Gatbsy
+            </h1>
+            <h2 className="text-gray-400 font-roboto font-semibold text-sm mt-1">
+              F.Scott Fitezgerald
+            </h2>
+            <div className="flex gap-2 mt-2 justify-center">
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-gray-300"></i>
+            </div>
+          </div>
+        </div>
+        <div className="">
+          <div className="flex-col  text-center">
+            <img src="https://placehold.co/180x200" alt="card" />
+            <h1 className="font-roboto text-lg font-bold mt-2">
+              The Other's Gold
+            </h1>
+            <h2 className="text-gray-400 font-roboto font-semibold text-sm mt-1">
+              Alizabeth Ames
+            </h2>
+            <div className="flex gap-2 mt-2 justify-center">
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-amber-500"></i>
+            </div>
+          </div>
+        </div>
+        <div className="">
+          <div className="flex-col  text-center">
+            <img src="https://placehold.co/180x200" alt="card" />
+            <h1 className="font-roboto text-lg font-bold mt-2">
+              Of Mice And Men
+            </h1>
+            <h2 className="text-gray-400 font-roboto font-semibold text-sm mt-1">
+              John SteinBeck
+            </h2>
+            <div className="flex gap-2 mt-2 justify-center">
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-amber-500"></i>
+            </div>
+          </div>
+        </div>
+        <div className="">
+          <div className="flex-col  text-center">
+            <img src="https://placehold.co/180x200" alt="card" />
+            <h1 className="font-roboto text-lg font-bold mt-2">
+              The Vanishing Half
+            </h1>
+            <h2 className="text-gray-400 font-roboto font-semibold text-sm mt-1">
+              Brit Bennet
+            </h2>
+            <div className="flex gap-2 mt-2 justify-center">
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-amber-500"></i>
+              <i className="fa fa-star text-gray-300"></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
