@@ -22,7 +22,8 @@ const All = (props) => {
   }
 
   return (
-    <div>
+    <>
+      {/* <SideBar /> */}
       <div className="flex justify-between ml-12 mr-12 pt-12 items-center">
         <div>
           <h1 className="text-black font-roboto text-lg font-semibold">
@@ -41,17 +42,18 @@ const All = (props) => {
             <form onSubmit={handleSubmit}>
               <input
                 type="text"
+                name="inputName"
                 placeholder="Search Book"
                 className="p-2 pl-8 border bg-gray-200 rounded-lg"
               />
-              <button>
+              <button type="submit">
                 <i className="fa-solid fa-magnifying-glass text-lg text-gray-400 absolute top-2 right-3"></i>
               </button>
             </form>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
