@@ -15,7 +15,7 @@ const Adventure = () => {
         <div className="flex">
           <button className=" flex gap-4 items-center bg-gray-200 p-2 rounded-lg">
             <h1 className=" text-gray-400 font-roboto text-base">Filter</h1>
-            <i class="fas fa-filter  text-gray-500"></i>
+            <i className="fas fa-filter  text-gray-500"></i>
           </button>
         </div>
       </div>

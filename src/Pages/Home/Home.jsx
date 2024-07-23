@@ -1,14 +1,12 @@
 import React from "react";
-import RadixComponent from "../../component/RadixComponent";
-import SideBar from "../../component/SideBar";
+import Cards from "../../component/Cards";
 
-const Home = () => {
+const Home = ({ books }) => {
   return (
     <>
-      <div className="flex">
-        <SideBar />
-        <RadixComponent />
-      </div>
+      <>
+        <Cards books={books} />
+      </>
     </>
   );
 };

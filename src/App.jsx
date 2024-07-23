@@ -1,10 +1,12 @@
 import React from "react";
-import Home from "./Pages/Home/Home";
+import { useState } from "react";
+import All from "./component/All";
 
 const App = () => {
+  const [books, setBooks] = useState([]);
   return (
     <>
-      <Home />
+      <All books={books} setBooks={setBooks} />
     </>
   );
 };
