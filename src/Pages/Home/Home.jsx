@@ -1,6 +1,6 @@
 import React from "react";
-import RadixComponent from "./component/RadixComponent";
-import SideBar from "./component/SideBar";
+import RadixComponent from "../../component/RadixComponent";
+import SideBar from "../../component/SideBar";
 
 const Home = () => {
   return (
