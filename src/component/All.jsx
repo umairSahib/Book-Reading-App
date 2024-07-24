@@ -1,4 +1,5 @@
 import React from "react";
+import Cards from "./Cards";
 
 const All = (props) => {
   async function handleSubmit(event) {
@@ -23,7 +24,6 @@ const All = (props) => {
 
   return (
     <>
-      {/* <SideBar /> */}
       <div className="flex justify-between ml-12 mr-12 pt-12 items-center">
         <div>
           <h1 className="text-black font-roboto text-lg font-semibold">
@@ -53,6 +53,7 @@ const All = (props) => {
           </div>
         </div>
       </div>
+      <Cards books={props.books} />
     </>
   );
 };

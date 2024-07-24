@@ -3,8 +3,8 @@ import React from "react";
 const Header = () => {
   return (
     <>
-      <div className=" pl-8 pr-8 pt-8">
-        <div className="flex justify-between items-center ">
+      <div className=" pl-8 pr-8 pt-8 ">
+        <div className="flex justify-between items-center  ">
           <div className="flex gap-8 items-center">
             <div className="relative">
               <input
@@ -32,12 +32,12 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="mt-10">
+        {/* <div className="mt-10">
           <h1 className="text-3xl font-roboto font-semibold ">
             The most <span className="text-sky-400">popular book</span> this
             weak
           </h1>
-        </div>
+        </div> */}
       </div>
     </>
   );
