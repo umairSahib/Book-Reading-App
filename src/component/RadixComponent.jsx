@@ -10,10 +10,7 @@ import Business from "./Business";
 import Education from "./Education";
 
 const RadixComponent = () => (
-  <Tabs.Root
-    className="flex flex-col w-full shadow-[0_2px_10px] shadow-blackA2 pt-10"
-    defaultValue="tab1"
-  >
+  <Tabs.Root className="flex flex-col w-full  pt-10" defaultValue="tab1">
     <Tabs.List
       className="shrink-0 flex border-b border-mauve6"
       aria-label="Manage your account"
@@ -71,49 +68,49 @@ const RadixComponent = () => (
       className="grow p-4  rounded-b-md outline-none focus:shadow-[0_0_0_2px] focus:shadow-black"
       value="tab1"
     >
-      <All />
+      {/* <All /> */}
     </Tabs.Content>
     <Tabs.Content
       className="grow p-4  rounded-b-md outline-none focus:shadow-[0_0_0_2px] focus:shadow-black"
       value="tab2"
     >
-      <Adventure />
+      {/* <Adventure /> */}
     </Tabs.Content>
     <Tabs.Content
       className="grow p-4  rounded-b-md outline-none focus:shadow-[0_0_0_2px] focus:shadow-black"
       value="tab3"
     >
-      <Fantasy />
+      {/* <Fantasy /> */}
     </Tabs.Content>
     <Tabs.Content
       className="grow p-4  rounded-b-md outline-none focus:shadow-[0_0_0_2px] focus:shadow-black"
       value="tab4"
     >
-      <Deductive />
+      {/* <Deductive /> */}
     </Tabs.Content>
     <Tabs.Content
       className="grow p-4  rounded-b-md outline-none focus:shadow-[0_0_0_2px] focus:shadow-black"
       value="tab5"
     >
-      <Pyscology />
+      {/* <Pyscology /> */}
     </Tabs.Content>
     <Tabs.Content
       className="grow p-4  rounded-b-md outline-none focus:shadow-[0_0_0_2px] focus:shadow-black"
       value="tab6"
     >
-      <Business />
+      {/* <Business /> */}
     </Tabs.Content>
     <Tabs.Content
       className="grow p-4  rounded-b-md outline-none focus:shadow-[0_0_0_2px] focus:shadow-black"
       value="tab7"
     >
-      <Horor />
+      {/* <Horor /> */}
     </Tabs.Content>
     <Tabs.Content
       className="grow p-4  rounded-b-md outline-none focus:shadow-[0_0_0_2px] focus:shadow-black"
       value="tab8"
     >
-      <Education />
+      {/* <Education /> */}
     </Tabs.Content>
   </Tabs.Root>
 );
