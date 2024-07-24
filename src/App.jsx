@@ -9,14 +9,14 @@ const App = () => {
   const [books, setBooks] = useState([]);
   return (
     <>
-      {/* <div className="flex">
+      <div className="flex">
         <SideBar />
         <div>
           <Header />
           <All books={books} setBooks={setBooks} />
         </div>
-      </div> */}
-      <BookDetail />
+      </div>
+      {/* <BookDetail /> */}
     </>
   );
 };
