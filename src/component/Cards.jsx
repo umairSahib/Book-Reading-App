@@ -23,7 +23,7 @@ const Cards = ({ books }) => {
                     className="w-full h-48 rounded-md object-cover"
                   />
                   {/* <Link to={`/book/${book.id}`}></Link> */}
-                  <Link to={`/MyBook/${book.id}`}>
+                  <Link to={`/myBook/${book.id}`}>
                     <h2 className="text-[#000000] pt-4 pl-5 font-semibold text-lg">
                       {book.title}
                     </h2>
