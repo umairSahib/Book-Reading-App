@@ -26,7 +26,7 @@ const All = (props) => {
   return (
     <>
       <RadixComponent />
-      <div className="flex justify-between ml-12 mr-12 pt-12 items-center">
+      <div className="flex justify-between ml-12 mr-12 pt-12 items-center ">
         <div>
           <h1 className="text-black font-roboto text-lg font-semibold">
             12.745 Book listed

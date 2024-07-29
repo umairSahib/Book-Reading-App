@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <>
-      <div className=" pl-8 pr-8 pt-8 ">
+      <div className=" pl-8 pr-8 pt-8  ">
         <div className="flex justify-between items-center  ">
           <div className="flex gap-8 items-center">
             <div className="relative">
@@ -22,7 +22,7 @@ const Header = () => {
               <i className="fa-regular fa-bell text-black "></i>
             </div>
             <div className="flex gap-2 items-center">
-              <img src="https://placehold.co/50x50" alt="logo" />
+              <img src="./images/navimage.png" alt="logo" />
               <div className="flex items-center gap-2">
                 <h2 className="text-base text-black font-roboto">
                   Jack Walter

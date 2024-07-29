@@ -10,7 +10,7 @@ const Cards = ({ books }) => {
           // console.log("🚀 ~ {books?.docs?.map ~ book:", book, "book");
 
           return (
-            <div className=" items-center grid " key={index}>
+            <div className="  flex flex-col text-center " key={index}>
               <div className="bg-white rounded-lg border p-4">
                 <div className="text">
                   <img
@@ -22,15 +22,22 @@ const Cards = ({ books }) => {
                     alt="card "
                     className="w-full h-48 rounded-md object-cover"
                   />
-                  {/* <Link to={`/book/${book.id}`}></Link> */}
+
                   <Link to={`/myBook/${book.id}`}>
-                    <h2 className="text-[#000000] pt-4 pl-5 font-semibold text-lg">
+                    <h2 className="font-roboto text-lg font-bold whitespace-pre mt-2">
                       {book.title}
                     </h2>
                   </Link>
-                  <h3 className="text-[#cf8383] pt-2 pl-5 font-semibold text-sm">
+                  <h3 className="text-[#C3C4CA] font-roboto font-semibold mt-1 text-sm">
                     {book?.author_name?.[0]}
                   </h3>
+                </div>
+                <div className="flex gap-2 mt-2 justify-center">
+                  <i className="fa fa-star text-amber-500"></i>
+                  <i className="fa fa-star text-amber-500"></i>
+                  <i className="fa fa-star text-amber-500"></i>
+                  <i className="fa fa-star text-amber-500"></i>
+                  <i className="fa fa-star text-gray-300"></i>
                 </div>
               </div>
             </div>

@@ -3,8 +3,8 @@ import React from "react";
 const BookDetails = () => {
   return (
     <>
-      <div className="bg-[#F0F2FA] pl-10 pr-10 pt-8 min-w-full">
-        <nav className="flex gap-40">
+      <div className="bg-[#F0F2FA] pl-4 pr-4 pt-8">
+        <nav className="flex">
           <div>
             <i className="fa-solid fa-arrow-left-long text-gray-300 font-Roboto"></i>{" "}
           </div>
@@ -98,7 +98,7 @@ const BookDetails = () => {
                 natus in minus vel libero saepe enim praesentium explicabo
                 sapiente aspernatur quos illo exercitationem minima!
               </h3>
-              <div className="flex items-center gap-4 mt-8 pb-20">
+              <div className="flex items-center gap-4 mt-8 pb-2">
                 <button className="bg-[#1F86FF] pl-16 pt-2 pb-2 pr-16 text-white font-Roboto text-base font-medium">
                   Start Reading
                 </button>
