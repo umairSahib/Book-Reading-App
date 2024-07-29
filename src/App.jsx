@@ -12,10 +12,10 @@ const App = () => {
 
   return (
     <>
-      <div className="flex">
-        <SideBar />
+      <div className="flex flex-col md:flex-row">
+        <SideBar className="md:w-1/4" />
         <div className="flex-1">
-          <div className="w-full ">
+          <div className="w-full">
             <Header />
           </div>
           <Routes>

@@ -5,12 +5,10 @@ const Cards = ({ books }) => {
   console.log("🚀 ~ books:", books);
   return (
     <>
-      <div className="grid grid-cols-3 mt-10 ml-4 mr-4 ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 md:mt-10 mx-2 md:mx-4">
         {books?.docs?.map((book, index) => {
-          // console.log("🚀 ~ {books?.docs?.map ~ book:", book, "book");
-
           return (
-            <div className="  flex flex-col text-center " key={index}>
+            <div className="flex flex-col text-center" key={index}>
               <div className="bg-white rounded-lg border p-4">
                 <div className="text">
                   <img
@@ -19,12 +17,12 @@ const Cards = ({ books }) => {
                         ? `https://covers.openlibrary.org/b/isbn/${book?.isbn[0]}.jpg`
                         : ""
                     }
-                    alt="card "
+                    alt="card"
                     className="w-full h-48 rounded-md object-cover"
                   />
 
                   <Link to={`/myBook/${book.id}`}>
-                    <h2 className="font-roboto text-lg font-bold whitespace-pre mt-2">
+                    <h2 className="font-roboto text-lg font-bold whitespace-pre mt-2 truncate">
                       {book.title}
                     </h2>
                   </Link>
