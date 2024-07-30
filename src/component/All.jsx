@@ -1,27 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import Cards from "./Cards";
 import RadixComponent from "./RadixComponent";
+import { AppContext } from "../context";
 
 const All = (props) => {
-  async function handleSubmit(event) {
-    event.preventDefault();
-
-    const formData = new FormData(event.target);
-    const inputValue = formData.get("inputName");
-
-    const response = await fetch(
-      `https://openlibrary.org/search.json?q=${inputValue}&fields=key,title,author_name,isbn&limit=20&page=1`
-    );
-    const data = await response.json();
-    console.log("🚀 ~ handleSubmit ~ data:", data);
-    const addId = data.docs.map((item, index) => {
-      item.id = index + 1;
-      return item;
-    });
-    console.log("🚀 ~ addId ~ addId:", addId);
-
-    props.setBooks(data);
-  }
+  const { handleSubmit } = useContext(AppContext);
+  // console.log("🚀 ~ All ~ name:", name);
 
   return (
     <>
@@ -55,7 +39,7 @@ const All = (props) => {
           </div>
         </div>
       </div>
-      <Cards books={props.books} />
+      <Cards />
     </>
   );
 };

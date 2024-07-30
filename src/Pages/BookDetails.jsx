@@ -1,10 +1,20 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { AppContext } from "../context";
 
 const BookDetails = () => {
-  const name = useContext(AppContext);
+  const { handleSubmit, books } = useContext(AppContext);
+  console.log("🚀 ~ BookDetails ~ books:", books);
+  console.log("🚀 ~ BookDetails ~ name:", handleSubmit);
+  const [data, setData] = useState({});
   const { id } = useParams();
+
+  useEffect(() => {
+    const data = books.docs.filter((value) => value.id == id);
+    setData(data[0]);
+    console.log("🚀 ~ useEffect ~ data:", data);
+  }, []);
+
   return (
     <>
       <div className="bg-[#F0F2FA] pl-4 pr-4 pt-8 ">
@@ -17,15 +27,13 @@ const BookDetails = () => {
             <div className="text-[#C3C4CA] font-Roboto">/</div>
             <div className="text-[#C3C4CA] font-Roboto">Fantasy</div>
             <div className="text-[#C3C4CA] font-Roboto">/</div>
-            <div className="text-[#C3C4CA] font-Roboto">
-              The Fellowship of the Ring {name}
-            </div>
+            <div className="text-[#C3C4CA] font-Roboto">{data.title}</div>
           </div>
         </nav>
 
         <div className="bg-white mt-12 ml-32 mr-12 flex  relative">
           <div className=" absolute -left-20 top-10">
-            <img src="https://placehold.co/200x300" alt="placeholder" />
+            <img src={data.isbn} alt="placeholder" />
           </div>
           <div className="pl-40 pr-10 pt-10">
             <div className="flex gap-2 pt-4 pl-4">
@@ -37,7 +45,7 @@ const BookDetails = () => {
             </div>
 
             <h1 className=" text-xl font-semibold font-Roboto mt-6 pl-4">
-              The Fellowship of the Ring
+              {data.title}
             </h1>
             <div className="flex  gap-10 mt-4 pl-4">
               <div>

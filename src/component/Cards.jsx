@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AppContext } from "../context";
 
-const Cards = ({ books }) => {
-  console.log("🚀 ~ books:", books);
+const Cards = () => {
+  const { books } = useContext(AppContext);
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 md:mt-10 mx-2 md:mx-4">
