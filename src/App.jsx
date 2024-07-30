@@ -5,7 +5,14 @@ import { Routes, Route, Outlet } from "react-router-dom";
 import BookDetails from "./Pages/BookDetails";
 import SideBar from "./component/SideBar";
 
-const Main = ({ books, setBooks }) => <All books={books} setBooks={setBooks} />;
+const Main = ({ books, setBooks }) => {
+  return (
+    <>
+      <Header />
+      <All books={books} setBooks={setBooks} />
+    </>
+  );
+};
 
 const App = () => {
   const [books, setBooks] = useState([]);
@@ -15,9 +22,6 @@ const App = () => {
       <div className="flex flex-col md:flex-row">
         <SideBar className="md:w-1/4" />
         <div className="flex-1">
-          <div className="w-full">
-            <Header />
-          </div>
           <Routes>
             <Route
               path="/"

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { useParams } from "react-router-dom";
+import { AppContext } from "../context";
 
 const BookDetails = () => {
+  const name = useContext(AppContext);
+  const { id } = useParams();
   return (
     <>
-      <div className="bg-[#F0F2FA] pl-4 pr-4 pt-8">
-        <nav className="flex">
+      <div className="bg-[#F0F2FA] pl-4 pr-4 pt-8 ">
+        <nav className="flex gap-10">
           <div>
             <i className="fa-solid fa-arrow-left-long text-gray-300 font-Roboto"></i>{" "}
           </div>
@@ -14,12 +18,12 @@ const BookDetails = () => {
             <div className="text-[#C3C4CA] font-Roboto">Fantasy</div>
             <div className="text-[#C3C4CA] font-Roboto">/</div>
             <div className="text-[#C3C4CA] font-Roboto">
-              The Fellowship of the Ring
+              The Fellowship of the Ring {name}
             </div>
           </div>
         </nav>
 
-        <div className="bg-white mt-12 ml-12 mr-12 flex  relative">
+        <div className="bg-white mt-12 ml-32 mr-12 flex  relative">
           <div className=" absolute -left-20 top-10">
             <img src="https://placehold.co/200x300" alt="placeholder" />
           </div>
@@ -78,7 +82,7 @@ const BookDetails = () => {
             </div>
             <div>
               <h2 className="text-[#C3C4CA] font-Roboto text-base text-medium pt-8 pl-4">
-                Overview
+                {id}
               </h2>
             </div>
             <div className=" pt-2 pl-4">
@@ -90,6 +94,7 @@ const BookDetails = () => {
                 Possimus voluptate iste placeat impedit nesciunt ex repellendus
                 quas, enim est inventore et! Quidem alias, repellat accusamus
                 impedit a magni architecto doloribus nostrum. Perferendis esse
+                <br />
                 ipsam, asperiores iure dolorem recusandae tenetur dicta nemo
                 mollitia cupiditate soluta nesciunt provident accusantium porro
                 libero qui eos. Quia nobis doloremque facere ipsam quam,
