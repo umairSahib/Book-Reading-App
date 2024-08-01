@@ -4,9 +4,8 @@ import { AppContext } from "../context";
 
 const BookDetails = () => {
   const { handleSubmit, books } = useContext(AppContext);
-  console.log("🚀 ~ BookDetails ~ books:", books);
-  console.log("🚀 ~ BookDetails ~ name:", handleSubmit);
   const [data, setData] = useState({});
+  console.log("🚀 ~ BookDetails ~ data:", data);
   const { id } = useParams();
 
   useEffect(() => {
@@ -32,10 +31,18 @@ const BookDetails = () => {
         </nav>
 
         <div className="bg-white mt-12 ml-32 mr-12 flex  relative">
-          <div className=" absolute -left-20 top-10">
-            <img src={data.isbn} alt="placeholder" />
+          <div className=" absolute -left-24 top-10">
+            <img
+              className="w-60 h-auto"
+              src={
+                data?.isbn
+                  ? `https://covers.openlibrary.org/b/isbn/${data?.isbn[0]}.jpg`
+                  : ""
+              }
+              alt="placeholder"
+            />
           </div>
-          <div className="pl-40 pr-10 pt-10">
+          <div className="pl-48 pr-10 pt-10">
             <div className="flex gap-2 pt-4 pl-4">
               <i className="fa-solid fa-star text-yellow-500"></i>
               <i className="fa-solid fa-star text-yellow-500"></i>
@@ -70,7 +77,7 @@ const BookDetails = () => {
                 </div>
                 <div>
                   <h3 className="font-Roboto text-lg font-semibold flex justify-center">
-                    J.R.R Tolkien
+                    {data.author_name}
                   </h3>
                 </div>
               </div>
@@ -90,26 +97,23 @@ const BookDetails = () => {
             </div>
             <div>
               <h2 className="text-[#C3C4CA] font-Roboto text-base text-medium pt-8 pl-4">
-                {id}
+                Overview
               </h2>
             </div>
             <div className=" pt-2 pl-4">
-              <h3 className="font-normal font-Roboto text-base  ">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
-                culpa, maxime voluptate veritatis nemo ex recusandae assumenda
-                error velit voluptatem enim eius est beatae neque consectetur
-                ratione! <br />
-                Possimus voluptate iste placeat impedit nesciunt ex repellendus
-                quas, enim est inventore et! Quidem alias, repellat accusamus
-                impedit a magni architecto doloribus nostrum. Perferendis esse
+              <h3 className="font-normal font-Roboto text-base max-w-xl  ">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
+                eligendi voluptatibus consequuntur totam quasi voluptates
                 <br />
-                ipsam, asperiores iure dolorem recusandae tenetur dicta nemo
-                mollitia cupiditate soluta nesciunt provident accusantium porro
-                libero qui eos. Quia nobis doloremque facere ipsam quam,
+                adipisci molestias labore asperiores voluptas quo magni officia
+                ab, quia, possimus debitis, ipsum tempore aut iusto voluptatum
+                nam dolore. Necessitatibus velit doloribus voluptatum amet
+                cumque maiores omnis eos doloremque, molestias debitis!
                 <br />
-                perspiciatis iure quisquam aut. Nostrum quae, laborum ex, sunt
-                natus in minus vel libero saepe enim praesentium explicabo
-                sapiente aspernatur quos illo exercitationem minima!
+                Aspernatur, fugit animi ad alias earum facere cumque accusamus a
+                rem similique pariatur! Asperiores nesciunt aliquam ea voluptas
+                qui natus corporis aperiam inventore. Esse ab dolores dolor
+                maxime sint obcaecati, dicta velit atque? Libero!
               </h3>
               <div className="flex items-center gap-4 mt-8 pb-2">
                 <button className="bg-[#1F86FF] pl-16 pt-2 pb-2 pr-16 text-white font-Roboto text-base font-medium">
