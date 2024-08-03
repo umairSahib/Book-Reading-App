@@ -19,7 +19,7 @@ const Cards = () => {
                 src={
                   book?.isbn
                     ? `https://covers.openlibrary.org/b/isbn/${book?.isbn[0]}.jpg`
-                    : ""
+                    : "https://th-i.thgim.com/public/incoming/28c5k9/article67578768.ece/alternates/FREE_1200/Welcome%20to%20Paradise%20HR.jpeg"
                 }
                 alt="card"
                 className="w-full h-64 rounded-md object-cover image-background"
