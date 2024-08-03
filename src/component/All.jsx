@@ -3,9 +3,8 @@ import Cards from "./Cards";
 import RadixComponent from "./RadixComponent";
 import { AppContext } from "../context";
 
-const All = (props) => {
+const All = () => {
   const { handleSubmit } = useContext(AppContext);
-  // console.log("🚀 ~ All ~ name:", name);
 
   return (
     <>

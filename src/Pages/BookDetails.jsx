@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { AppContext } from "../context";
+import { useNavigate } from "react-router-dom";
 
 const BookDetails = () => {
   const { handleSubmit, books } = useContext(AppContext);
@@ -9,17 +10,22 @@ const BookDetails = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    const data = books.docs.filter((value) => value.id == id);
+    const data = books.docs.filter((value) => {
+      return value.id == id;
+    });
     setData(data[0]);
-    console.log("🚀 ~ useEffect ~ data:", data);
   }, []);
+  console.log("🚀 ~ useEffect ~ data: mydata", data);
+  const navigate = useNavigate();
 
   return (
     <>
       <div className="bg-[#F0F2FA] pl-4 pr-4 pt-8 ">
         <nav className="flex gap-10">
           <div>
-            <i className="fa-solid fa-arrow-left-long text-gray-300 font-Roboto"></i>{" "}
+            <button onClick={() => navigate(-1)}>
+              <i className="fa-solid fa-arrow-left-long text-gray-300 font-Roboto"></i>
+            </button>
           </div>
           <div className="flex gap-4">
             <div className="text-[#C3C4CA] font-Roboto">Home</div>

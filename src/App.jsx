@@ -36,12 +36,14 @@ const App = () => {
 
     setBooks(data);
   }
+
+  document.body.style.overflow = "hidden";
   return (
     <>
-      <AppContext.Provider value={{ name: "umair", books, handleSubmit }}>
-        <div className="flex flex-col md:flex-row">
+      <AppContext.Provider value={{ books, handleSubmit }}>
+        <div className="flex">
           <SideBar className="md:w-1/4" />
-          <div className="flex-1">
+          <div className="flex-1 ">
             <Routes>
               <Route path="/" element={<Main />} />
               <Route path="/myBook/:id" element={<BookDetails />} />

@@ -22,7 +22,11 @@ const Header = () => {
               <i className="fa-regular fa-bell text-black "></i>
             </div>
             <div className="flex gap-2 items-center">
-              <img src="./images/navimage.png" alt="logo" />
+              <img
+                className="w-14 h-auto"
+                src="./images/navimage.png"
+                alt="logo"
+              />
               <div className="flex items-center gap-2">
                 <h2 className="text-base text-black font-roboto">
                   Jack Walter
